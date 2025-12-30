@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: naveenthotadevops/myapp:dbimage
+   image: naveenthotadevops/mysecondapp:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: naveenthotadevops/myapp:appimage
+   image: naveenthotadevops/mysecondapp:appimage
    ports:
      - "1111:8080"
    depends_on:
